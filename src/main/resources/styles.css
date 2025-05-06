@@ -1,0 +1,58 @@
+.depth-coloring .-j-tree-guide-node:d-0,.depth-coloring  .-j-tree-cell:d-1 {
+    -fx-background-color: #00000022;
+}
+.depth-coloring .-j-tree-guide-node:d-1,.depth-coloring  .-j-tree-cell:d-2 {
+    -fx-background-color: #00000044;
+}
+.depth-coloring .-j-tree-guide-node:d-2,.depth-coloring  .-j-tree-cell:d-3 {
+    -fx-background-color: #00000066;
+}
+.depth-coloring .-j-tree-guide-node:d-3,.depth-coloring  .-j-tree-cell:d-4 {
+    -fx-background-color: #00000088;
+}
+.depth-coloring .-j-tree-guide-node:d-4,.depth-coloring  .-j-tree-cell:d-5 {
+    -fx-background-color: #000000aa;
+}
+.depth-coloring .-j-tree-guide-node:d-5,.depth-coloring  .-j-tree-cell:d-6 {
+    -fx-background-color: #000000cc;
+}
+.depth-coloring .-j-tree-guide-node:d-6,.depth-coloring  .-j-tree-cell:d-7 {
+    -fx-background-color: #000000ee;
+}
+.depth-coloring .-j-tree-guide-node:d-7,.depth-coloring  .-j-tree-cell:d-8 {
+    -fx-background-color: #000000ff;
+}
+.depth-coloring :d-4 *,.depth-coloring  :d-5 *,.depth-coloring  :d-6 *,.depth-coloring  :d-7 *,.depth-coloring  :d-8 * {
+    -fx-fill: #fff;
+}
+
+.depth-coloring .-j-tree-cell:hover
+{
+    -fx-border-color: black;
+    -fx-border-radius: 2px;
+    -fx-border-width: 1px;
+}
+.depth-coloring .-j-tree-cell:d-4:hover,.depth-coloring .-j-tree-cell:d-5:hover,.depth-coloring .-j-tree-cell:d-6:hover,
+.depth-coloring .-j-tree-cell:d-7:hover,.depth-coloring .-j-tree-cell:d-8:hover
+{
+    -fx-border-color: blue;
+    -fx-border-radius: 2px;
+    -fx-border-width: 1px;
+}
+
+.corner-curves .-j-tree-guide-node:child-0 {
+    -fx-background-radius: 5px 0 0 0;
+    -fx-border-radius: 5px 0 0 0;
+}
+
+.corner-curves .-j-tree-guide-node:child-last {
+    -fx-background-radius: 0 0 0 5px;
+    -fx-border-radius: 0 0 0 5px;
+}
+
+.scroll-bar {
+    -fx-opacity: .5;
+}
+.scroll-bar:hover {
+    -fx-opacity: 1;
+}
