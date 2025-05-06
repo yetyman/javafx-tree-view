@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>org.yetyman</groupId>
-    <artifactId>tree-view</artifactId>
+    <artifactId>javafx-tree-view</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -82,7 +82,7 @@
         </dependency>
         <dependency>
             <groupId>org.yetyman</groupId>
-            <artifactId>jfx-helpers</artifactId>
+            <artifactId>javafx-helpers</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
