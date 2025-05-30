@@ -199,10 +199,10 @@ public class TreeViewTestController extends GridPane {
         TreeView<Something> treeView = new TreeView<>();
         treeViewTestController.getChildren().add(treeView);
 
-        btn.addEventHandler(MouseEvent.MOUSE_CLICKED, _ ->{
+        btn.addEventHandler(MouseEvent.MOUSE_CLICKED, a ->{
             treeView.scrollUp();
         });
-        btn2.addEventHandler(MouseEvent.MOUSE_CLICKED, _ ->{
+        btn2.addEventHandler(MouseEvent.MOUSE_CLICKED, a ->{
             treeView.scrollDown();
         });
 

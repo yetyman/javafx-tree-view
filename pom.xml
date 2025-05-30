@@ -6,12 +6,31 @@
     <parent>
         <groupId>io.github</groupId>
         <artifactId>yetyman</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>2025.05.29.3-ALPHA</version>
     </parent>
 
     <groupId>io.github.yetyman</groupId>
     <artifactId>javafx-tree-view</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>${project.parent.version}</version>
+
+    <name>${project.artifactId}</name>
+    <description>Sample application</description>
+    <url>https://github.com/yetyman/${project.artifactId}</url>
+    <inceptionYear>2025</inceptionYear>
+
+    <scm>
+        <connection>scm:git:${project.url}.git</connection>
+        <developerConnection>scm:git:${project.url}.git</developerConnection>
+        <url>${project.url}.git</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <developers>
+        <developer>
+            <id>${project.developer.id}</id>
+            <name>${project.developer.name}</name>
+        </developer>
+    </developers>
 
     <dependencies>
         <dependency>

@@ -396,7 +396,7 @@ public class TreeView<T> extends Pane {
 //        getChildren().add(caretParent);
 
         getChildren().add(verticalScrollBar);
-        visibleItems.addListener((_, _, _)->{ visibleItems.get(); verticalScrollBar.maxProperty().get(); });
+        visibleItems.addListener((s, a, b)->{ visibleItems.get(); verticalScrollBar.maxProperty().get(); });
 
         AtomicBoolean nestingProtect = new AtomicBoolean(false);
         addEventFilter(ScrollEvent.ANY, evt->{
@@ -774,10 +774,10 @@ public class TreeView<T> extends Pane {
                 hoverCopyCell = cellFactory.apply(this);
                 hoverCopyCell.setManaged(false);
                 hoverCopyCell.setVisible(false);
-                hoverCopyCell.setOnMouseEntered(_-> {
+                hoverCopyCell.setOnMouseEntered(a-> {
                     hoveredCellHovered.set(true);
                 });
-                hoverCopyCell.setOnMouseExited(_-> {
+                hoverCopyCell.setOnMouseExited(a-> {
                     hoveredCellHovered.set(false);
                     hoverCopyCell.setVisible(false);
                     hoveredCell.set(null);
