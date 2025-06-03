@@ -16,7 +16,6 @@ import javafx.stage.Window;
 import org.apache.commons.math3.util.FastMath;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import structures.directions.OrthoDirection;
 
 import java.time.Duration;
 import java.util.*;

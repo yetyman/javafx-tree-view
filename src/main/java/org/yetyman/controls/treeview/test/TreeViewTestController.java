@@ -14,7 +14,6 @@ import javafx.scene.paint.RadialGradient;
 import javafx.scene.paint.Stop;
 import javafx.scene.shape.Polygon;
 import javafx.scene.text.Text;
-import structures.directions.OrthoDirection;
 
 import java.util.List;
 
@@ -40,7 +39,6 @@ public class TreeViewTestController extends GridPane {
         setConstraints(btn, 3, 0, 1, 1, HPos.CENTER, VPos.TOP);
         setConstraints(btn2, 3, 0, 1, 1, HPos.CENTER, VPos.BOTTOM);
 
-        TreeView<Something> treeView = addTree(btn, btn2, this);
         TreeView<Something> treeView2 = addTree(btn, btn2, this);
         TreeView<Something> treeView3 = addTree(btn, btn2, this);
         TreeView<Something> treeView4 = addTree(btn, btn2, this);
@@ -49,6 +47,7 @@ public class TreeViewTestController extends GridPane {
         TreeView<Something> treeView7 = addTree(btn, btn2, this);
         TreeView<Something> treeView8 = addTree(btn, btn2, this);
         TreeView<Something> treeView9 = addTree(btn, btn2, this);
+        TreeView<Something> treeView = addTree(btn, btn2, this);
 
         setConstraints(treeView, 0, 0, 1, 1);
         setConstraints(treeView2, 1, 1, 1, 1);
@@ -93,7 +92,7 @@ public class TreeViewTestController extends GridPane {
         Border b = new Border(new BorderStroke(Color.CADETBLUE, BorderStrokeStyle.SOLID, new CornerRadii(3), BorderWidths.DEFAULT));
         treeView.setCellFactory(t->{
             BasicTreeCell<Something> cell = new BasicTreeCell<>();
-            cell.setMinWidth(50);
+            cell.setMinWidth(150);
             cell.setPadding(new Insets(5));
             TreeView.setMargin(cell, new Insets(1));
             cell.setBorder(b);

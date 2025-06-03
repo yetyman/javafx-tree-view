@@ -5,7 +5,6 @@ import javafx.collections.FXCollections;
 import javafx.geometry.Insets;
 import javafx.scene.layout.Region;
 import org.yetyman.controls.PseudoClassHelper;
-import structures.directions.OrthoDirection;
 
 import java.util.List;
 

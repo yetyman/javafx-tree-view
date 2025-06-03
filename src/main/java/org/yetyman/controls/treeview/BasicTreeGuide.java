@@ -5,7 +5,6 @@ import javafx.geometry.VPos;
 import javafx.scene.CacheHint;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
-import structures.directions.OrthoDirection;
 
 import java.util.List;
 
