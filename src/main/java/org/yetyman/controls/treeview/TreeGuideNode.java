@@ -18,10 +18,10 @@ public abstract class TreeGuideNode<T> extends Region {
     public final ReadOnlyListProperty<OrthoDirection> currentDirections = currentDirectionsInternal.getReadOnlyProperty();
     private TreeItem<T> rowTreeItem;
 
-    private final transient ObjectProperty<Integer> indexClass = PseudoClassHelper.getPseudoClassObjectProperty(this, "v-%d", null);
-    private final transient ObjectProperty<Integer> depthClass = PseudoClassHelper.getPseudoClassObjectProperty(this, "d-%d", null);
-    private final transient ObjectProperty<Integer> childIndexClass = PseudoClassHelper.getPseudoClassObjectProperty(this, "child-%d", null);
-    private final transient BooleanProperty childLastClass = PseudoClassHelper.getPseudoClassProperty(this, "child-last", false);
+    private final transient ObjectProperty<Integer> indexClass = PseudoClassHelper.createPseudoClassObjectProperty(this, "v-%d", null);
+    private final transient ObjectProperty<Integer> depthClass = PseudoClassHelper.createPseudoClassObjectProperty(this, "d-%d", null);
+    private final transient ObjectProperty<Integer> childIndexClass = PseudoClassHelper.createPseudoClassObjectProperty(this, "child-%d", null);
+    private final transient BooleanProperty childLastClass = PseudoClassHelper.createPseudoClassProperty(this, "child-last", false);
 
     public TreeGuideNode(){
         getStyleClass().add("-j-tree-guide-node");

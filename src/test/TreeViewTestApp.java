@@ -16,7 +16,7 @@ public class TreeViewTestApp extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         var controller = new TreeViewTestController();
-        controller.getStylesheets().add("./styles.css");
+        controller.getStylesheets().add("styles.css");
         controller.setPrefSize(600, 600);
 //        controller.setPrefSize(Region.USE_COMPUTED_SIZE, Region.USE_COMPUTED_SIZE);
         controller.setBorder(new Border(new BorderStroke(Color.BLACK, BorderStrokeStyle.DASHED, CornerRadii.EMPTY, BorderWidths.DEFAULT)));

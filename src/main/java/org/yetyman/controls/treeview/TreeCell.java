@@ -15,10 +15,10 @@ public abstract class TreeCell<T> extends Region {
         getStyleClass().add("-j-tree-cell");
     }
 
-    private final transient ObjectProperty<Integer> indexClass = PseudoClassHelper.getPseudoClassObjectProperty(this, "v-%d", null);
-    private final transient ObjectProperty<Integer> depthClass = PseudoClassHelper.getPseudoClassObjectProperty(this, "d-%d", null);
-    private final transient ObjectProperty<Integer> childIndexClass = PseudoClassHelper.getPseudoClassObjectProperty(this, "child-%d", null);
-    private final transient BooleanProperty childLastClass = PseudoClassHelper.getPseudoClassProperty(this, "child-last", false);
+    private final transient ObjectProperty<Integer> indexClass = PseudoClassHelper.createPseudoClassObjectProperty(this, "v-%d", null);
+    private final transient ObjectProperty<Integer> depthClass = PseudoClassHelper.createPseudoClassObjectProperty(this, "d-%d", null);
+    private final transient ObjectProperty<Integer> childIndexClass = PseudoClassHelper.createPseudoClassObjectProperty(this, "child-%d", null);
+    private final transient BooleanProperty childLastClass = PseudoClassHelper.createPseudoClassProperty(this, "child-last", false);
 
     public void setContent(Node content) {
         if(!getChildren().isEmpty()) {

@@ -11,8 +11,8 @@ public abstract class TreeCaretNode<T> extends Region {
     private int depth;
     private int visibleIndex;
 
-    private final transient ObjectProperty<Integer> indexClass = PseudoClassHelper.getPseudoClassObjectProperty(this, "v-%d", null);
-    private final transient ObjectProperty<Integer> depthClass = PseudoClassHelper.getPseudoClassObjectProperty(this, "d-%d", null);
+    private final transient ObjectProperty<Integer> indexClass = PseudoClassHelper.createPseudoClassObjectProperty(this, "v-%d", null);
+    private final transient ObjectProperty<Integer> depthClass = PseudoClassHelper.createPseudoClassObjectProperty(this, "d-%d", null);
 
     //TODO: plan to expand this to be bound to the same value in the tree item at all times it is bound to one
     private final ReadOnlyBooleanWrapper disclosureInternal = new ReadOnlyBooleanWrapper(false);
