@@ -1,4 +1,4 @@
-package org.yetyman.controls.treeview.test;
+package org.yetyman.controls.treeview;
 
 import javafx.application.Application;
 import javafx.scene.Scene;

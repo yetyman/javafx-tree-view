@@ -1,6 +1,5 @@
-package org.yetyman.controls.treeview.test;
+package org.yetyman.controls.treeview;
 
-import org.yetyman.controls.treeview.*;
 import javafx.geometry.HPos;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
