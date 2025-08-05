@@ -33,16 +33,11 @@
     </developers>
 
     <build>
+
         <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>flatten-maven-plugin</artifactId>
-                <configuration>
-                    <flattenMode>resolveCiFriendliesOnly</flattenMode>
-                    <outputDirectory>${project.basedir}</outputDirectory>
-                    <flattenedPomFilename>.flattened-pom.xml</flattenedPomFilename>
-                    <updatePomFile>false</updatePomFile>
-                </configuration>
             </plugin>
         </plugins>
     </build>
