@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>io.github</groupId>
-        <artifactId>yetyman</artifactId>
-        <version>2025.05.29.3-ALPHA</version>
+        <groupId>io.github.yetyman</groupId>
+        <artifactId>parent-pom</artifactId>
+        <version>2025.08.05.2-ALPHA</version>
     </parent>
 
     <groupId>io.github.yetyman</groupId>
@@ -80,7 +80,7 @@
         <dependency>
             <groupId>io.github.yetyman</groupId>
             <artifactId>javafx-helpers</artifactId>
-            <version>2025.05.29.3-ALPHA</version>
+            <version>${project.parent.version}</version>
         </dependency>
     </dependencies>
 </project>
